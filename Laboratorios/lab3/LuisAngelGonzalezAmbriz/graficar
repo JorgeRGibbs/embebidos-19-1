@@ -1,0 +1,2 @@
+plot 'seno.dat' w l
+pause mouse
