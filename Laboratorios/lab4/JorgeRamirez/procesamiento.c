@@ -58,7 +58,8 @@ int menorArreglo (int *datos)
 	register int i, menor;
 	
 	menor  = datos[0];
-	for ( i = 0; i < NUM_PROC; i++)
+
+	for ( i = 0; i < N; i++)
 	{
 		if (datos [i] < menor)
 		{
@@ -73,7 +74,8 @@ int mayorArreglo (int *datos)
 {
 	register int i, mayor;
 	mayor  = datos[0];
-	for (i = 0; i < NUM_PROC; i++)
+
+	for (i = 0; i < N; i++)
 	{
 		if (datos [i] > mayor)
 		{

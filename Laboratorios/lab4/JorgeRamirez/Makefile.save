@@ -1,7 +1,7 @@
 #makefile
 #Archivo makefile simple
 #das verdammt c datei ist kaput, ich muss das reparieren.
-PROYECTO=principal
+PROYECTO=muestreo
 DESTDIR=/usr/local/bin
 CFLAGS=-Wall
 LDFLAGS=-lm 
@@ -21,7 +21,7 @@ all: $(PROYECTO)
 #procesamiento.o : archivos.c 
 #	gcc -c procesamiento.c $(CFLAGS)
 
-$(PROYECTO): procesamiento.o datos.o procesos.o principal.o defs.h procesos.h datos.h procesamiento.h
+$(PROYECTO): proc
 
 #SRC=$(wildcard *.c)
 #test: $(SRC)

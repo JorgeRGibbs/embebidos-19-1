@@ -23,11 +23,21 @@ void llenarArreglo(int *datos)
 	{
 		datos[i] = rand() % 255;
 	}
+	printf("Arreglo en desorden:\n");
+	for (int i = 0; i < N; i++)
+	{
+		printf("número %d: %d\n", i, datos[i]);
+	} 
 }
 
 void imprimirArreglo(int * datos,int mayor,int menor,int prom){
 	//int mayor,menor;
 	register int i;
+	/*printf("Arreglo en desorden:\n");
+	for (int i = 0; i < N; i++)
+	{
+		printf("número %d: %d\n", i, datos[i]);
+	} */	
 	//printf("El número mayor es: %d\n",mayor);
 	//printf("El número menor es: %d\n",menor);
 	//printf("El promedio es: %d \n",prom );

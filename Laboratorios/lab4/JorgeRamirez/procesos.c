@@ -32,7 +32,7 @@ void procesoPadre()
 
 void procesoHijo(int np, int *datos)
 {		int mayor, menor;
-		float prom;
+		int prom;
 		printf("Proceso hijo %d con pid %d\n",np, getpid());
 	//	while(1);	
 		if( np == 0 )
@@ -45,23 +45,23 @@ void procesoHijo(int np, int *datos)
 		{
 			//printf("Proceso %d\n",np);
 			menor = menorArreglo(datos);
-			printf("El número menor es: %d\n",menor );
+			printf("El número menor es: %d\n",menor);
 			exit(menor);
 		}else if(np== 2)
 		{
 			//printf("Proceso %d\n",np);
 			prom = promedioArreglo(datos);
-			printf("El promedio es: %f\n",prom );
+			printf("El promedio es: %d\n",prom);
 			exit(prom);
 		}else if (np ==3)
 		{
 			//printf("Proceso %d\n",np);
 			ordenaArreglo(datos);
 			imprimirArreglo(datos);
-			exit(np);
+			exit(*datos);
 		}
 
 		exit(np);
 }
-
+	
 

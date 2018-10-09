@@ -4,7 +4,7 @@
 PROYECTO=principal
 DESTDIR=/usr/local/bin
 CFLAGS=-Wall
-LDFLAGS=-lm 
+LDFLAGS=-lm -lpthread 
 CC=gcc 
 
 all: $(PROYECTO)
@@ -21,7 +21,7 @@ all: $(PROYECTO)
 #procesamiento.o : archivos.c 
 #	gcc -c procesamiento.c $(CFLAGS)
 
-$(PROYECTO): procesamiento.o datos.o procesos.o principal.o defs.h procesos.h datos.h procesamiento.h
+$(PROYECTO): hilos1.o hilos2.o #hilos3.o #principal.o 
 
 #SRC=$(wildcard *.c)
 #test: $(SRC)
